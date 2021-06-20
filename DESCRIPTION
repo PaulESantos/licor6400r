@@ -22,4 +22,9 @@ RoxygenNote: 7.1.1
 URL: https://github.com/PaulESantos/licor6400
 BugReports: https://github.com/PaulESantos/licor6400/issues
 Imports: 
-    lifecycle
+    checkmate,
+    dplyr,
+    readr,
+    lifecycle,
+    tidyr,
+    stringr

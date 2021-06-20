@@ -34,5 +34,3 @@ This is a basic example which shows you how to solve a common problem:
 library(licor6400)
 ## basic example code
 ```
-
-W

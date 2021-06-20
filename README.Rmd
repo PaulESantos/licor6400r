@@ -40,4 +40,3 @@ library(licor6400)
 ## basic example code
 ```
 
-W
