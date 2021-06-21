@@ -1,0 +1,45 @@
+"OPEN 6.3.4"
+"Sun Jun 13 2021 00:57:38"
+<open><version>"6.3.4"</version></open>
+<open><configfile>"/User/Configs/UserPrefs/SoilChamber_6.2.xml"</configfile></open>
+<open><light><source>"Sun+Sky"</source><par_in>1<sensor>""<cal>0.00<actinity>1.00</actinity><transm>1.00</transm></cal></sensor><transm>1</transm></par_in><par_out>0<sensor>""<cal>0</cal></sensor></par_out></light></open>
+<open><comps><file>"/User/Configs/Comps/StdSoilEqns_6.2.LPL"<header>""</header><extras></extras></file><energybal>no<f_parIn>1</f_parIn><f_parOut>0</f_parOut><alphaK>0.19</alphaK></energybal><bc_total>1.000<stomatal_ratio>0</stomatal_ratio><bc_oneside>1.000<type>0</type><table>"/Sys/Lib/StdBLCTable"</table><area>6</area><slope>0</slope><offset>1</offset><fan>5</fan></bc_oneside></bc_total></comps></open>
+<open><prompts><onlog>off</onlog><items>"Soil Efflux Prompts"<items[1]><id>-104</id><label>"Plot#"</label><desc>""</desc><type>0</type><strscrlen>0</strscrlen><fmt1>2</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[1]><items[2]><id>305</id><label>"InsDpth"</label><desc>"Insertion Depth (cm)"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>2</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[2]></items></prompts></open>
+<open><constants><oxygen>21 %</oxygen><bb_vapor>1.5</bb_vapor><bb_oxy>0.9</bb_oxy></constants></open>
+<open><stability><items>"None"<items[1]><id>-2</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[1]><items[2]><id>-5</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[2]><items[3]><id>-7</id><size>15</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[3]></items></stability></open>
+<open><log><format>"StdSoilLogList_6.0"<items>{ -35 -21 -36 -104 310 311 320 302 303 306 304 321 322 323 324 300 301 330 331 305 308 -8 -2 -5 -9 -10 -13 -11 -61 -23 307 313 314 315 316 317 318 319  }<hdr>{ 308 313 314 315 316 317 318 319 307  }</hdr></items></format><options><beep>on</beep><match>"never"<time>30</time><co2>100</co2><delta>10</delta></match><hdr>normal</hdr><rem>normal</rem><stab>no</stab><stats>no<mean>no</mean><file>no</file><period>15</period></stats><excel>yes</excel><controls>yes</controls><comm>no</comm></options><datafile>"/User/CBT_EARLY_NIGHT_5B"</datafile><button><action>"Do Nothing"<code>" Noop "</code></action></button><autoprog>"/User/Configs/AutoProgs/AutoLog2"<active>no</active></autoprog></log></open>
+<open><a2d><avgtime>1.0 secs</avgtime><userchans><ch20>"Off"</ch20><ch21>"ON, gnd=6, res=0"</ch21><ch22>"Off"</ch22><ch23>"Off"</ch23></userchans></a2d></open>
+<open><matching><type>1</type><disp>'a'</disp><settings>><CO2Limit>10.0</CO2Limit><H2OLimit>1.0</H2OLimit><MaxAutoTime>60</MaxAutoTime><AverageTime>10</AverageTime></settings></matching></open>
+<SoilSettings><label>"Default settings"</label><insert_depth>0</insert_depth><target>375</target><delta>10</delta><numCycles>3</numCycles><log><intermediateObs>yes</intermediateObs><finalFluxes>yes</finalFluxes></log><settings><deadTime>10</deadTime><minMeasTime>20</minMeasTime><extra_ppm>5</extra_ppm><flow>700</flow></settings><chamber><soil_area>81</soil_area><base_vol>991</base_vol></chamber></SoilSettings>
+<li6400><factory><unit>"PSC-2470"</unit><serviced>"5 Feb 2018"</serviced><fuseaware>0</fuseaware><co2mixer>yes</co2mixer><co2><coeffs>{ 0 0.214772 2.55802e-05 1.93228e-08 -3.02262e-12 2.75724e-16  }</coeffs><dvdt>-4</dvdt><xs>{ 9.11e-05 0.00178  }</xs></co2><h2o><coeffs>{ 0 0.00581526 2.16703e-06 7.69607e-12  }</coeffs><dvdt>-2.9</dvdt><xs>{ -0.000111 -0.00256  }</xs></h2o><flow>{ 0 0.3696  }</flow><press>{ 86.913 0.00551  }</press></factory></li6400>
+<li6400><user><flow_zero>-3.5</flow_zero><irga_zero><co2>35.5 -1603.2<at>30.7617</at></co2><h2o>74.5 -549.8<at>30.6104</at></h2o></irga_zero><irga_span><co2>{ 1.00013 0.999694  }</co2><h2o>{ 0.999743 1.00001  }</h2o></irga_span><irga_match><co2>{ -0.296605 13.5522  }</co2><h2o>{ 0.00115595 -0.398505  }</h2o></irga_match><co2_mixer><pump_mv>5000</pump_mv><ppm>{ 2787.43 1227.33 452.949 268.261 145.771 129.89 126.058 121.704  }</ppm><mv>{ 5000 3000 1500 1000 500 300 200 100  }</mv></co2_mixer><parin_offset>-0.211894</parin_offset><led_cal><unit>"SI-2503"</unit><mv>{ 10 25 50 100 1000 2000 3000 4000 5000  }</mv><qntm>{ 1.49392 8.44711 21.8724 54.8149 708.613 1411.43 2075.75 2710.86 3314.03  }</qntm></led_cal><lcf_cal><unit>"LCF-0981"</unit><red><mv>{ 50 100 200 400 800 1500  }</mv><qntm>{ 64.6036 145.758 312.409 661.73 1377.94 2641.23  }</qntm></red><blue><mv>{ 100 500 1000 2000 3000 4000 5000  }</mv><qntm>{ 11.107 44.4539 81.9578 145.168 203.372 256.093 300.56  }</qntm></blue></lcf_cal></user></li6400>
+"Const="	308	"Area"	81
+"Const="	313	"Target"	375
+"Const="	314	"Delta"	10
+"Const="	315	"ddMargin"	5
+"Const="	316	"DeadTime"	10
+"Const="	317	"MnMsrTme"	20
+"Const="	318	"NumCycls"	3
+"Const="	319	"ddFlow"	700
+"Const="	307	"Vbase"	991
+"00:57:43 5B"
+$STARTOFDATA$
+"Obs"	"HHMMSS"	"FTime"	"Plot#"	"Mode"	"Smpls"	"EFFLUX"	"C2avg"	"Wavg"	"dc'/dt"	"Vtot"	"RHcmbr%"	"Tsoil_C"	"RHirga%"	"Tsch_C"	"dC/dt"	"dW/dt"	"R(C)m"	"R(C)b"	"InsDpth"	"TBlk"	"CO2S"	"H2OS"	"Tair"	"Tleaf"	"PARo"	"Press"	"uc_21_mV"	"Status"
+"00:58:49 5B"
+"Const="	313	"Target"	400
+"Const="	314	"Delta"	10
+1	"01:00:22"	185.0	8E+01	3	8	9.41	401.3	9.48	0.7687	991	31.77	19.28	29.50	19.00	2.5258	-0.0066699	0	0	0	20.05	406.76	9.469	20.19	19.00	0	73.97	-192.8	110005
+2	"01:00:25"	187.5	8E+01	3	13	9.02	404.3	9.47	0.7375	991	31.72	19.28	29.49	19.00	2.423	-0.0058865	0	0	0	20.05	412.88	9.459	20.18	19.00	0	73.97	-192.8	110005
+3	"01:00:27"	190.0	8E+01	3	18	9.32	407.5	9.47	0.7622	991	31.66	19.27	29.42	18.99	2.5033	-0.0048279	0	0	0	20.03	420.02	9.431	20.17	18.99	0	73.97	-192.7	110005
+4	"01:00:30"	192.5	8E+01	3	20	9.56	412.7	9.46	0.7818	991	31.71	19.29	29.45	18.97	2.5676	-0.0046725	0	0	0	20.02	426.84	9.437	20.16	18.97	0	73.97	-192.9	110005
+5	"01:00:32"	195.0	8E+01	3	20	10.1	419.2	9.44	0.8241	991	31.72	19.28	29.44	18.95	2.7063	-0.0047018	0	0	0	20.02	433.33	9.426	20.15	18.95	0	73.97	-192.8	110005
+6	"01:00:39"	201.5	8E+01	4	33	9.2	400.0	9.42	0.7519	991	31.62	19.30	29.37	18.93	2.6285	-0.0033167	0.0021341	-0.10171	0	19.99	450.46	9.389	20.12	18.93	0	73.96	-193.0	110005
+7	"01:01:40"	263.0	8E+01	4	33	9.23	400.0	9.32	0.7548	991	31.95	19.26	29.57	18.61	2.5847	-0.0040059	0.0012277	0.26374	0	19.73	449.23	9.298	19.85	18.61	0	73.95	-192.6	110005
+8	"01:02:40"	323.0	8E+01	4	33	9.26	400.0	9.20	0.7567	991	32.23	19.27	29.75	18.29	2.5667	-0.0035064	0.0011381	0.30145	0	19.46	448.64	9.195	19.58	18.29	0	73.95	-192.7	110005
+9	"01:04:00"	402.5	8E+01	4	33	9.04	400.0	9.03	0.7391	991	32.48	19.26	29.79	17.87	2.6356	0.00036777	0.0025211	-0.26932	0	19.14	450.00	9.021	19.25	17.87	0	73.96	-192.6	110005
+10	"01:04:59"	462.0	8E+01	4	33	9.61	400.0	8.92	0.7857	991	32.61	19.26	29.79	17.58	2.5421	-0.0040125	3.3851E-05	0.77215	0	18.93	449.34	8.892	19.02	17.58	0	73.96	-192.6	110005
+11	"01:05:58"	521.0	8E+01	4	33	9.39	400.0	8.85	0.7672	991	32.99	19.25	29.96	17.28	2.6926	-0.0014133	0.0018108	0.042855	0	18.73	450.46	8.830	18.81	17.28	0	73.96	-192.5	110005
+"01:06:15 5A"
+12	"01:07:35"	618.0	8E+01	4	33	6.38	400.0	9.68	0.5212	991	37.30	18.59	33.33	16.72	1.954	-0.0092468	0.0034497	-0.85872	0	18.44	429.05	9.632	18.50	16.72	0	73.96	-185.9	110005
+13	"01:08:22"	665.0	8E+01	4	33	7.9	400.0	9.70	0.6458	991	38.16	18.41	33.86	16.46	2.0266	-0.00034272	-0.00048469	0.83968	0	18.31	434.96	9.697	18.36	16.46	0	73.96	-184.1	110005
+14	"01:09:12"	714.5	8E+01	4	33	7.64	400.0	9.76	0.6247	991	38.78	18.32	34.34	16.27	2.2157	-0.0024546	0.0026336	-0.42877	0	18.15	438.52	9.735	18.19	16.27	0	73.97	-183.2	110005
