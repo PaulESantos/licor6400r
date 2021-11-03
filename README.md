@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# licor6400
+# licor6400r
 
 <!-- badges: start -->
 
@@ -12,7 +12,7 @@ status](https://www.r-pkg.org/badges/version/licor6400)](https://CRAN.R-project.
 [![R-CMD-check](https://github.com/PaulESantos/licor6400/workflows/R-CMD-check/badge.svg)](https://github.com/PaulESantos/licor6400/actions)
 <!-- badges: end -->
 
-The **licor6400** package objective is to aid in the reading and
+The **licor6400r** package objective is to aid in the reading and
 processing of LI-6400 data files with the soil co2 flux chamber
 configuration.
 
@@ -23,7 +23,7 @@ You can install the development version from
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("PaulESantos/licor6400")
+remotes::install_github("PaulESantos/licor6400r")
 ```
 
 ## Example
@@ -31,6 +31,6 @@ remotes::install_github("PaulESantos/licor6400")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(licor6400)
+library(licor6400r)
 ## basic example code
 ```

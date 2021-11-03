@@ -1,6 +1,7 @@
-^licor6400\.Rproj$
+^licor6400r\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
 ^cran-comments\.md$
 ^\.github$
+^li6800.R
